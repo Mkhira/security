@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="security:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/security_jar</output-path>
+    <root id="archive" name="security.jar">
+      <element id="module-output" name="security" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jfoenix-8.0.7.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

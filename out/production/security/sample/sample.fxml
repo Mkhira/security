@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #B3E5FC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="336.0" layoutY="14.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #03A9F4;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="14.0" mnemonicParsing="false" onAction="#Decode_cesar_no_spac" prefHeight="29.0" prefWidth="119.0" style="-fx-background-color: #FF4081;" text="De Ceaser no spac" textFill="WHITE" AnchorPane.rightAnchor="257.0">
+               <font>
+                  <Font name="Constantia Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="5.0" layoutY="14.0" mnemonicParsing="false" onAction="#Encode_cesar_no_spac" prefHeight="29.0" prefWidth="107.0" style="-fx-background-color: #FF4081;" text="En Cesar no Spa" textFill="WHITE" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="Constantia Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="255.0" layoutY="14.0" mnemonicParsing="false" onAction="#Encode_cesar_spac" prefHeight="29.0" prefWidth="107.0" style="-fx-background-color: #FF4081;" text="En Cesar Spa" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="379.0" layoutY="14.0" mnemonicParsing="false" onAction="#Decode_cesar_spac" prefHeight="29.0" prefWidth="107.0" style="-fx-background-color: #FF4081;" text="De Ceaser spac" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="plane_text1" labelFloat="true" layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="263.0" promptText="Plane Texte" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="28.0" />
+      <JFXTextField fx:id="encrypt_key" labelFloat="true" layoutX="14.0" layoutY="80.0" promptText="Encrypt key" style="-fx-background-color: #FFFFFF;" />
+      <JFXTextField fx:id="Sypher_text" labelFloat="true" layoutX="14.0" layoutY="176.0" prefHeight="25.0" prefWidth="263.0" promptText="Sypher text" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="14.0" />
+      <JFXTextField fx:id="plane_text2" editable="false" labelFloat="true" layoutX="11.0" layoutY="316.0" prefHeight="25.0" prefWidth="263.0" promptText="Plane Texte" style="-fx-background-color: #FFFFFF;" />
+      <JFXTextField fx:id="decrypt_key" labelFloat="true" layoutX="14.0" layoutY="227.0" promptText="Encrypt key" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="286.0" layoutY="76.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="76.0">
+         <children>
+
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#EN_Transpostion" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN  Transpostion" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+
+
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#DE_Transpostion" style="-fx-background-color: #00BCD4;" text="DE Transpostion" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="296.0" layoutY="144.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#EN_Viginre" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN Viginre" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#DE_Viginre" style="-fx-background-color: #00BCD4;" text="DE Viginre" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="286.0" layoutY="208.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;" AnchorPane.rightAnchor="14.0">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#PlayFair_EN" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN Play Fair" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#PlayFair_DE" style="-fx-background-color: #00BCD4;" text="DE Play Fair" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="afinean" layoutX="286.0" layoutY="270.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;" visible="false">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#EN_Affine" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN Affine" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#DE_Affine" prefHeight="29.0" prefWidth="107.0" style="-fx-background-color: #00BCD4;" text="DE Affine" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="14.0" layoutY="643.0" mnemonicParsing="false" onAction="#Affine_show" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="Show Affine" textFill="WHITE">
+         <font>
+            <Font name="Constantia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="decimal" labelFloat="true" layoutX="16.0" layoutY="130.0" promptText="Decimal_Num" style="-fx-background-color: #FFFFFF;" visible="false" />
+      <JFXTextField fx:id="decimal_back" labelFloat="true" layoutX="14.0" layoutY="270.0" promptText="Encrypt key" style="-fx-background-color: #FFFFFF;" visible="false" />
+      <AnchorPane layoutX="289.0" layoutY="334.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#Ploly_EN" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN Ploly" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#Poly_DE" style="-fx-background-color: #00BCD4;" text="DE Ploly" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="291.0" layoutY="394.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#time_EN" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN Timepad" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#time_DE" style="-fx-background-color: #00BCD4;" text="DE Timepad" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="291.0" layoutY="457.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="13.0" mnemonicParsing="false" onAction="#hill_EN" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="EN Hill" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="304.0" layoutY="15.0" mnemonicParsing="false" onAction="#hill_DE" style="-fx-background-color: #00BCD4;" text="DE Hill" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="deanc" layoutX="11.0" layoutY="349.0" prefHeight="288.0" prefWidth="273.0" style="-fx-background-color: #FF4081;" visible="false">
+         <children>
+            <JFXTextField labelFloat="true" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="195.0" promptText="XA" style="-fx-background-color: #FFFFFF;" fx:id="xa" />
+            <JFXTextField labelFloat="true" layoutX="14.0" layoutY="73.0" prefHeight="25.0" prefWidth="195.0" promptText="XB" style="-fx-background-color: #FFFFFF;" fx:id="xb" />
+            <JFXTextField fx:id="mo" labelFloat="true" layoutX="14.0" layoutY="132.0" prefHeight="25.0" prefWidth="195.0" promptText="modnum" style="-fx-background-color: #FFFFFF;" />
+            <JFXTextField fx:id="al" labelFloat="true" layoutX="14.0" layoutY="175.0" prefHeight="25.0" prefWidth="195.0" promptText="alpha" style="-fx-background-color: #FFFFFF;" />
+            <JFXTextField fx:id="out" labelFloat="true" layoutX="14.0" layoutY="221.0" prefHeight="25.0" prefWidth="195.0" promptText="out" style="-fx-background-color: #FFFFFF;" />
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="173.0" layoutY="643.0" mnemonicParsing="false" onAction="#def_show" prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: #00BCD4;" text="DefHelman Show" textFill="WHITE">
+         <font>
+            <Font name="Constantia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="defan" layoutX="289.0" layoutY="526.0" prefHeight="55.0" prefWidth="500.0" style="-fx-background-color: #0097A7;" visible="false">
+         <children>
+
+            <JFXButton layoutX="175.0" layoutY="13.0" mnemonicParsing="false" onAction="#fefhelm" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #00BCD4;" text="Defhelm" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
